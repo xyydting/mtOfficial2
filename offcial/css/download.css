@@ -1,0 +1,365 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#box {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url("../img/loading_bg.jpg") no-repeat;
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	position: relative;
+	z-index: 1000;
+}
+
+#box .load {
+	position: absolute;
+	width: 244px;
+	height: 244px;
+	background: url("../img/loading_halo.png") no-repeat;
+	left: 50%;
+	margin-left: -122px;
+	margin-top: -122px;
+	top: 50%;
+	animation: loading 1s linear infinite;
+	-moz-animation: loading 1s linear infinite;
+	-webkit-animation: loading 1s linear infinite;
+	-ms-animation: loading 1s linear infinite;
+	-o-animation: loading 1s linear infinite;
+}
+
+#box .logo {
+	position: absolute;
+	width: 161px;
+	height: 161px;
+	background: url("../img/loading_logo.png") no-repeat;
+	left: 50%;
+	top: 50%;
+	margin-left: -80px;
+	margin-top: -80px;
+}
+
+.indextop {
+	width: 100%;
+	height: 65px;
+	position: fixed;
+	background: rgba(0,0,0,0.2);
+	z-index: 100;
+	display: flex;
+	-moz-display: flex;
+	-webkit-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+}
+
+.navleft {
+	float: left;
+}
+
+.logo1 {
+	margin-top: 5px;
+	float: left;
+}
+
+.navcenter {
+	width: 70%;
+	float: right;
+	position: relative;
+	display: block;
+}
+
+.navcenter > ul {
+	position: absolute;
+	right: 8%;
+}
+
+.navcenter > ul > li {
+	text-align: center;
+	list-style: none;
+	margin-left: 40px;
+	float: left;
+}
+
+.navcenter > ul > li > a {
+	text-decoration: none;
+	color: #e5e5e5;
+	line-height: 65px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+
+.navcenter > ul > li:hover a {
+	color: #22d5d5;
+}
+
+#navBar .active a {
+	color: #22d5d5;
+}
+
+.about_nav_bg {
+	background: rgba(0,0,0,0.5);
+}
+
+.mobilenav {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	margin-top: -21px;
+	background: url("../img/mobilenavicon.png");
+}
+
+.mobilenav > ul {
+	width: 115px;
+	position: absolute;
+	right: 10%;
+	top: 100%;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.mobilenav > ul > li {
+	text-align: center;
+	list-style: none;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.mobilenav > ul > li > a {
+	text-decoration: none;
+	color: #e5e5e5;
+	line-height: 50px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+
+.mobilenav:hover ul {
+	display: block;
+}
+
+.mobilenav > ul > li:hover a {
+	color: #22d5d5;
+}
+
+.sharenav {
+	width: 5px;
+	height: 500px;
+	position: absolute;
+	margin-top: -250px;
+	right: 0;
+	top: 50%;
+	z-index: 100;
+}
+
+.sharenav .share {
+	width: 50px;
+	height: 240px;
+	position: absolute;
+	margin-top: -120px;
+	border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	background-color: rgba(0,0,0,0.8);
+	border: 1px solid #ffffff;
+	border-right: none;
+	right: 0;
+	top: 50%;
+	z-index: 100;
+	display: none;
+}
+
+.share .share_tilte {
+	width: 30px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.share_er {
+	width: 140px;
+	position: absolute;
+	right: 50px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+.sharenav:hover .share {
+	display: block;
+}
+
+.share a:hover .share_er {
+	display: block;
+}
+
+.fourth {
+	width: 100%;
+	height: 100%;
+	background: url("../img/fourth_pc_bg.jpg") no-repeat center;
+	background-size: cover;
+	-moz-background-size: cover;
+	position: relative;
+}
+
+.fourth_m_img {
+	width: 40%;
+	display: none;
+}
+
+.fourtherBox {
+	position: absolute;
+	left: 20%;
+	top:30%;
+}
+
+
+.za_login {
+	position: absolute;
+	left: 20%;
+	top: 75%;
+	color: #ffffff;
+	font-size: 26px;
+}
+
+@media screen and (max-width:768px) {
+	.navleft {
+		margin-left: 1%;
+	}
+
+	.logo1 {
+		height: 43px;
+	}
+
+	.navcenter {
+		display: none;
+	}
+
+	.mobilenav {
+		display: block;
+	}
+
+	.all ol {
+		left: 24%;
+	}
+
+	.fourth {
+		background: #0b55b6;
+	}
+
+	.fourth_m_img {
+		display: block;
+		position: absolute;
+		top: 14%;
+		left: 25%;
+	}
+
+	.fourtherBox {
+		left: 30%;
+		top: 55%;
+	}
+
+	.fourtherBox>img {
+		width: 50%;
+	}
+
+
+
+	.za_login {
+		top: 90%;
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+	.navleft {
+		margin-left: 3%;
+	}
+
+	.logo1 {
+		height: 45px;
+	}
+
+	.navcenter {
+		display: block;
+	}
+
+	.mobilenav {
+		display: none;
+	}
+
+	.all ol {
+		left: 38%;
+	}
+
+
+
+	.za_login {
+		top: 91%;
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+	.navleft {
+		margin-left: 5%;
+	}
+
+	.logo1 {
+		height: 48px;
+	}
+
+	.navcenter {
+		display: block;
+	}
+
+	.mobilenav {
+		display: none;
+	}
+
+	
+
+	.za_login {
+		top: 90%;
+		font-size: 24px;
+	}
+}
+
+@media screen and (min-width:1200px)and (max-width:1600px) {
+	.navleft {
+		margin-left: 8%;
+	}
+
+	.logo1 {
+		height: 55px;
+	}
+
+	.navcenter {
+		display: block;
+	}
+
+	.mobilenav {
+		display: none;
+	}
+
+	
+}
+
+@media screen and (min-width:1600px) {
+	.navleft {
+		margin-left: 8%;
+	}
+
+	.logo1 {
+		height: 55px;
+	}
+
+	.navcenter {
+		display: block;
+	}
+
+	.mobilenav {
+		display: none;
+	}
+
+
+}
